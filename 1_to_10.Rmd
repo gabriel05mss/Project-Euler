@@ -1,0 +1,37 @@
+---
+title: "1_to_10"
+output: html_document
+---
+
+# Problem 1
+
+```{r}
+aux = 0
+for(i in 1:999) {
+  if(i %% 3 == 0 || i %% 5 == 0) {
+    aux = aux + i
+  }
+}
+```
+
+# Problem 2
+
+```{r}
+seq <- c(1,2)
+i = 3
+repeat {
+  seq[i] <- seq[i-1] + seq[i - 2]
+  if(seq[i] >= 4000000){
+    break
+  }
+  i = i + 1
+}
+sum(seq[seq < 4000000 & seq %% 2 == 0])
+```
+
+# Problem 3
+
+```{r}
+600851475143
+```
+
