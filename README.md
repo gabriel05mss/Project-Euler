@@ -1,6 +1,6 @@
 # Project-Euler
 
-solving small math problems with R
+solving math problems with R
 
 https://projecteuler.net/
 
